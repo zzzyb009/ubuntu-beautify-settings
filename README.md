@@ -123,4 +123,6 @@ set number	"显示行号
 set tabstop=4   "设定缩进的长度  
 set ruler
 set hlsearch    "搜索时高亮结果
+
 NERDTree 文件树
+安装地址：https://github.com/scrooloose/nerdtree
