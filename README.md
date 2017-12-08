@@ -126,3 +126,22 @@ set hlsearch    "搜索时高亮结果
 
 NERDTree 文件树
 安装地址：https://github.com/scrooloose/nerdtree
+
+VScode配置：
+{
+    "workbench.colorTheme": "Default High Contrast",
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 14,    
+    "editor.cursorStyle": "line",
+    "editor.wordWrap": "on",
+    "php.validate.executablePath": "/usr/bin/php7.0",
+    "php.validate.run": "onType",
+    "view-in-browser.customBrowser": "/snap/bin/chromium",
+    "editor.cursorBlinking": "phase",
+    "editor.renderLineHighlight": "all",
+    
+}
+
