@@ -23,12 +23,7 @@ apt-get install fonts-wqy-microhei
 
 oh my zsh安装
 apt install -y zsh
-cd /etc/ 
-vim passwd
-把将   1000:1000:username,,,:/home/username:/bin/bash  改为 1000:1000:username,,,:/home/username:/bin/zsh
-或者
-vim /etc/pam.d/chsh   把shell注释
-chsh -s /usr/bin/zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 UI配置完成
 
