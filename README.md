@@ -1,4 +1,5 @@
 # ubuntu-beautify-settings
+
 软件中心安装ubuntu tweak tool
 https://apps.ubuntu.com/cat/applications/saucy/docky/  安装docky
 
@@ -11,52 +12,82 @@ sudo apt-get install flatabulous-theme
 
 配套的图标（扁平的图标）
 sudo add-apt-repository ppa:noobslab/icons
+
 sudo apt-get update
+
 sudo apt-get install ultra-flat-icons
 
 Numix 圆形图标
+
 sudo add-apt-repository ppa:numix/ppa
+
 sudo apt-get update
+
 sudo apt-get install numix-icon-theme numix-icon-theme-circle
 
 采用文泉译微米黑字体替代系统字体
+
 apt-get install fonts-wqy-microhei
+
 安装搜狗拼音输入法
 
 oh my zsh安装
+
 apt install -y zsh
+
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 UI配置完成
 
 
 apt-fast的安装  一个多线程的安装工具，apt-get每次只能安装一个f，ast可以同时安装多个
+
 sudo add-apt-repository ppa:apt-fast/stable
+
 apt-get update
+
 apt-get install apt-fast
 
 安装miredo虚拟网卡来翻墙(现在不稳定了，还是百度吧)
+
 https://github.com/XX-net/XX-Net/wiki/How-to-use  将文中所涉及的插件尽数安装
+
 接下来参考：
+
 https://github.com/XX-net/XX-Net/wiki/%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8-SwitchyOmega
+
 总结为：安装完成之后每次开启需要先开启miredo虚拟网卡，然后到xx-net目录下运行 ./start 文件，正常情况下就可以科学上网了。
+
 相关文档：https://github.com/XX-net/XX-Net/wiki/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3
 
 音乐软件：网易云音乐http://music.163.com/#/download  官网直接下载
+
 微信：ubuntu商店
 
 安装sublime-text-3
+
 参考：http://www.sublimetext.com/docs/3/linux_repositories.html
+
 正常安装
+
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -    //GPG key
+
 sudo apt-get install apt-transport-https  //从https网站下载需要安装这个
+
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list   //stable version稳定版本
+
 apt-get update
+
 apt-get install sublime-text
+
 //不能正常的情况（终端显示已经连接却迟迟没有下载，最后下载失败了）这个时候要把上面的步骤重新来一次，把https都改为http即可，嗯应该就可以了
+
 wget -qO - http://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -    //GPG key
+
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list   //stable version稳定版本
+
 apt-get update
+
 apt-get install sublime-text
 
 sublime-text的一些插件的安装
