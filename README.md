@@ -4,7 +4,9 @@ https://apps.ubuntu.com/cat/applications/saucy/docky/  安装docky
 
 安装Flatabulous主题
 sudo add-apt-repository ppa:noobslab/themes
+
 sudo apt-get update
+
 sudo apt-get install flatabulous-theme
 
 配套的图标（扁平的图标）
