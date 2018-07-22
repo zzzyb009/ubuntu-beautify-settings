@@ -112,14 +112,17 @@ SublimeCodeIntel：代码提示、function定义跳转
 Emmet：一个强大的前端代码提示插件（html、xml、css）  参考http://blog.csdn.net/xiaozhi_2016/article/details/52415897
 BracketHighlighter：在行号左侧显示当前标签的对应图标，找不到对应的图标会出现问号，在有多层嵌套的符号时很方便
 //需在setting中添加以下配置项
+```
 "match_brackets": false,
 "match_brackets_angle": false,
 "match_brackets_braces": false,
 "match_brackets_content": false,
 "match_brackets_square": false,
 "match_tags": false,
+```
 安装php语法错误提示工具(SublimeLinter+SublimeLinter-php)：
 安装完之后打开sublimeLinter的配置文件，copy一份到用户的配置文件，并在path部分加入你的php执行目录路径：
+```
 "paths": {
     "linux": [
         "//usr//bin//php7.0"
@@ -127,6 +130,7 @@ BracketHighlighter：在行号左侧显示当前标签的对应图标，找不�
     "osx": [],
     "windows": []
 }
+```
 完成上述配置之后，编写php代码出错时在当前行左侧会有红点出现
 DocBlock：自动生成PHPDoc风格的注释。输入  /**   之后按下tab或者enter即可
 SideBarEnhancements：这个插件改进了侧边栏，增加了许多功能
@@ -139,6 +143,7 @@ SideBarEnhancements：这个插件改进了侧边栏，增加了许多功能
 4、在hosts文件中配置新的站点地址，比如：127.0.0.3 wwww.web.com web.com
 
 vim配置
+```
 /etc/vim/vimrc
 set showmatch       " Show matching brackets.
 "set ignorecase     " Do case insensitive matching
@@ -151,10 +156,13 @@ set number	"显示行号
 set tabstop=4   "设定缩进的长度  
 set ruler
 set hlsearch    "搜索时高亮结果
+```
 
 NERDTree 文件树
+
 安装地址：https://github.com/scrooloose/nerdtree
 
+```
 VScode配置：
 {
     "workbench.colorTheme": "Default High Contrast",
@@ -172,4 +180,4 @@ VScode配置：
     "editor.renderLineHighlight": "all",
     
 }
-
+```
