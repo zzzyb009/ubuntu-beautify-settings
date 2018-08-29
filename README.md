@@ -1,9 +1,8 @@
 # ubuntu-beautify-settings
 
-软件中心安装ubuntu tweak tool
-https://apps.ubuntu.com/cat/applications/saucy/docky/  安装docky
+### 软件中心安装ubuntu tweak tool
 
-#### 安装Flatabulous主题
+### 安装Flatabulous主题
 
 ```
 sudo add-apt-repository ppa:noobslab/themes
@@ -13,7 +12,7 @@ sudo apt-get update
 sudo apt-get install flatabulous-theme
 ```
 
-#### 配套的图标（扁平的图标）
+### 配套的图标（扁平的图标）
 
 ```
 sudo add-apt-repository ppa:noobslab/icons
@@ -23,7 +22,7 @@ sudo apt-get update
 sudo apt-get install ultra-flat-icons
 ```
 
-#### Numix 圆形图标
+### Numix 圆形图标
 ```
 sudo add-apt-repository ppa:numix/ppa
 
@@ -32,15 +31,15 @@ sudo apt-get update
 sudo apt-get install numix-icon-theme numix-icon-theme-circle
 ```
 
-#### 采用文泉译微米黑字体替代系统字体
+### 采用文泉译微米黑字体替代系统字体
 
 ```
 apt-get install fonts-wqy-microhei
 ```
 
-#### 安装搜狗拼音输入法
+### 安装搜狗拼音输入法
 
-#### oh my zsh安装
+### oh my zsh安装
 
 ```
 
@@ -49,10 +48,11 @@ apt install -y zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-UI配置完成
-====
+*至此，UI配置完成*
 
-#### apt-fast的安装
+======
+
+### apt-fast的安装
 一个多线程的安装工具，apt-get每次只能安装一个f，ast可以同时安装多个
 
 ```
@@ -64,7 +64,7 @@ apt-get update
 apt-get install apt-fast
 ```
 
-#### 安装miredo虚拟网卡来翻墙(现在不稳定了，还是百度吧)
+### 安装miredo虚拟网卡来翻墙(现在不稳定了，还是百度吧)
 
 `https://github.com/XX-net/XX-Net/wiki/How-to-use`  将文中所涉及的插件尽数安装
 
@@ -76,15 +76,15 @@ apt-get install apt-fast
 
 相关文档：`https://github.com/XX-net/XX-Net/wiki/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3`
 
-#### 音乐软件：网易云音乐 `http://music.163.com/#/download`  官网直接下载
+### 音乐软件：网易云音乐 `http://music.163.com/#/download`  官网直接下载
 
-#### 微信：ubuntu商店
+### 微信：ubuntu商店
 
-#### 安装sublime-text-3
+### 安装sublime-text-3
 
 参考： `http://www.sublimetext.com/docs/3/linux_repositories.html`
 
-##### 正常安装
+#### 正常安装
 
 ```
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -    //GPG key
@@ -98,7 +98,7 @@ apt-get update
 apt-get install sublime-text
 ```
 
-##### 不能正常的情况（终端显示已经连接却迟迟没有下载，最后下载失败了）这个时候要把上面的步骤重新来一次，把https都改为http即可，嗯应该就可以了
+#### 不能正常的情况（终端显示已经连接却迟迟没有下载，最后下载失败了）这个时候要把上面的步骤重新来一次，把https都改为http即可，嗯应该就可以了
 
 ```
 wget -qO - http://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -    //GPG key
@@ -110,7 +110,7 @@ apt-get update
 apt-get install sublime-text
 ```
 
-##### sublime-text的一些插件的安装及配置：
+#### sublime-text的一些插件的安装及配置：
 
 ```
 {
@@ -126,7 +126,7 @@ apt-get install sublime-text
 }
 ```
 
-##### 首先得安装package control：按下ctrl+shift+p，然后输入install package control，选择安装即可
+#### 首先得安装package control：按下ctrl+shift+p，然后输入install package control，选择安装即可
 插件：
 - A File Icon：安装了这个插件之后在左边的文件那里会显示文件类型的图标，美观一点，敲码心情更美丽
 - Auto File Name：鼠标在单双引号之间的时候，会有补充文件路径名的提示 （补全src、href文件路径）
@@ -162,13 +162,13 @@ apt-get install sublime-text
 - SideBarEnhancements：这个插件改进了侧边栏，增加了许多功能
 
 
-#### 一些关于nginx（nginx/1.10.3）虚拟主机的配置
+### 一些关于nginx（nginx/1.10.3）虚拟主机的配置
 - 1、先进入nginx的配置文件目录/etc/nginx/
 - 2、进入sites-available目录，当前目录下有一个default文件，copy一份并命名为你的要创建的虚拟主机的域名（或者其他名字都可以），然后修改这个文件中的server_name（网站名，访问用的域名,比如：server_name www.web.com web.com）和root（站点根目录，比如：/var/www/web），并去掉17行和18行的listen后面的default_server
 - 3、创建配置文件的软连接(从site-available链接到site-enabled)  （我创建的虚拟主机配置文件名为www.web.com）命令：ln -s /etc/nginx/sites-available/www.web.com /etc/nginx/sites-enabled/www.web.com
 - 4、在hosts文件中配置新的站点地址，比如：127.0.0.3 wwww.web.com web.com
 
-#### vim配置
+### vim配置
 
 ```
 /etc/vim/vimrc
@@ -185,7 +185,7 @@ set ruler
 set hlsearch    "搜索时高亮结果
 ```
 
-##### NERDTree 文件树
+#### NERDTree 文件树
 
 安装地址：https://github.com/scrooloose/nerdtree
 
