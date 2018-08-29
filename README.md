@@ -50,10 +50,10 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 
 *至此，UI配置完成*
 
-======
+<hr>
 
 ### apt-fast的安装
-一个多线程的安装工具，apt-get每次只能安装一个f，ast可以同时安装多个
+一个多线程的安装工具，apt-get每次只能下载一个如软件或者更新,apt-fast可以同时进行多个下载，这将大大加快下载速度
 
 ```
 
@@ -157,16 +157,16 @@ apt-get install sublime-text
     "windows": []
 }
 ```
+
 完成上述配置之后，编写php代码出错时在当前行左侧会有红点出现
 - DocBlock：自动生成PHPDoc风格的注释。输入  /**   之后按下tab或者enter即可
 - SideBarEnhancements：这个插件改进了侧边栏，增加了许多功能
 
-
 ### 一些关于nginx（nginx/1.10.3）虚拟主机的配置
-- 1、先进入nginx的配置文件目录/etc/nginx/
-- 2、进入sites-available目录，当前目录下有一个default文件，copy一份并命名为你的要创建的虚拟主机的域名（或者其他名字都可以），然后修改这个文件中的server_name（网站名，访问用的域名,比如：server_name www.web.com web.com）和root（站点根目录，比如：/var/www/web），并去掉17行和18行的listen后面的default_server
-- 3、创建配置文件的软连接(从site-available链接到site-enabled)  （我创建的虚拟主机配置文件名为www.web.com）命令：ln -s /etc/nginx/sites-available/www.web.com /etc/nginx/sites-enabled/www.web.com
-- 4、在hosts文件中配置新的站点地址，比如：127.0.0.3 wwww.web.com web.com
+- 1、先进入` nginx` 的配置文件目录 `/etc/nginx/` 
+- 2、进入 `sites-available` 目录，当前目录下有一个 `default`文件，copy一份并命名为你的要创建的虚拟主机的域名（或者其他名字都可以），然后修改这个文件中的server_name（网站名，访问用的域名,比如：`server_name www.web.com web.com`）和root（站点根目录，比如： `/var/www/web` ），并去掉17行和18行的listen后面的 `default_server`
+- 3、创建配置文件的软连接(从site-available链接到site-enabled)  （我创建的虚拟主机配置文件名为www.web.com）命令： `ln -s /etc/nginx/sites-available/www.web.com /etc/nginx/sites-enabled/www.web.com`
+- 4、在hosts文件中配置新的站点地址，比如： `127.0.0.3 wwww.web.com web.com`
 
 ### vim配置
 
@@ -187,7 +187,7 @@ set hlsearch    "搜索时高亮结果
 
 #### NERDTree 文件树
 
-安装地址：https://github.com/scrooloose/nerdtree
+安装地址： `https://github.com/scrooloose/nerdtree`
 
 ```
 VScode配置：
